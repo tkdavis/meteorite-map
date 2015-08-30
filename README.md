@@ -110,11 +110,15 @@ Some extra fun that might be worth incorporating into meteorite-map:
 
 ## Design
 
-To avoid spamming API calls to the NASA databases and abusing our access, we should keep a database of all meteorites local and make a request every day (possibly updated once an hour dependind)
+Setting out, we'll be doing the following:
 
-We'll be using Ruby on Rails as our web framework of choice, simply because Ember plays nice with it out of the box.
+* To avoid spamming API calls to the NASA databases and abusing our access, we should keep a database of all meteorites local and make a request every day (possibly updated once an hour dependind).
+* EmberJS is the frontend framework of choice we'll be using to drive the interaction and display.
+	* According to their page, we'll need to change all controllers to components once components are routable.
+* We'll be using Ruby on Rails as our web framework of choice, simply because Ember plays nice with it out of the box.
+* SASS will be our preprocessor of choice and we'll be using SCSS files.
 
-SASS will be our preprocessor of choice and we'll be using SCSS files.
+
 
 <a name="read" />
 ## Further Reading / Useful Links
