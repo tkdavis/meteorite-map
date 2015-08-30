@@ -2,8 +2,9 @@
 
 [![Join the chat at https://gitter.im/datadazer/meteorite-map](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/datadazer/meteorite-map?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This meteorite map is dedicated to providing up to date information on where meteorites have fallen. Since meteorites are often hard to distinguish from regular rocks, there are not many that get reported in to NASA or any of the other agencies. As such, the frequency of the updates may appear to take longer than they actually do. The main attraction is going to be the map where visitors can see approximately where the meteorite fell. The next thing is the data table where visitors can sort information based on a variety of factors regarding the meteorites.
+
+There are stretch goals for this project that may never see the light of day, but we would like to meet at some point in the future after we accomplish the main goals of the map.
 
 <a name="toc" />
 ## Table of Contents
@@ -108,17 +109,19 @@ Some extra fun that might be worth incorporating into meteorite-map:
 3. Generate directions (possibly via Google Maps)
 4. Predict where possible meteorites might fall.
 
+[Table of Contents](#table)
+
 ## Design
 
 Setting out, we'll be doing the following:
 
-* To avoid spamming API calls to the NASA databases and abusing our access, we should keep a database of all meteorites local and make a request every day (possibly updated once an hour dependind).
+* To avoid spamming API calls to the NASA databases and abusing our access, we should keep a database of all meteorites local and make a request every day (possibly updated once an hour depending).
 * EmberJS is the frontend framework of choice we'll be using to drive the interaction and display.
 	* According to their page, we'll need to change all controllers to components once components are routable.
 * We'll be using Ruby on Rails as our web framework of choice, simply because Ember plays nice with it out of the box.
 * SASS will be our preprocessor of choice and we'll be using SCSS files.
 
-
+[Table of Contents](#table)
 
 <a name="read" />
 ## Further Reading / Useful Links
