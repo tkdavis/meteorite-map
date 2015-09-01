@@ -70,6 +70,12 @@ We have open communication on Gitter at https://gitter.im/datadazer/meteorite-ma
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
+### API Keys
+
+|API                    |Key                                      |
+|:---------------------:|:---------------------------------------:|
+|Google Maps Javascript | AIzaSyBcIcoeFv6bDyZUz7eI-U42wqptWFrmj2A | 
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
