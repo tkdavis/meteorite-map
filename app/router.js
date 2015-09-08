@@ -6,12 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    // Changed so address looks like www.someaddresshere.com instead of
-    // www.someaddresshere.com/index
-    // resetNameSpace removed because we probably don't even need it
-    // but mostly because I couldn't figure out how to get it to work
-    // again.
-    this.route('index', { path : '/' });
+  this.route('index', { resetNameSpace: true });
 });
 
 export default Router;
