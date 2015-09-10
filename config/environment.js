@@ -19,12 +19,24 @@ module.exports = function(environment) {
     }
   };
 
-    // Courtesy of http://blog.atmartin.io/google-maps-integration-ember-cli-edition/
+    /* 
+       The following 2 children of the 'ENV' object are based off of the ember-google-map
+       addon (provided by running 'ember install ember-google-map') wiki at
+       https://github.com/huafu/ember-google-map/wiki/Configuration 
+    */
   ENV.contentSecurityPolicy = {
-      'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com",
-      'img-src': "'self' https://*.googleapis.com https://*.gstatic.com",
-      'font-src': "'self' https://*.gstatic.com",
-      'style-src': "'self' 'unsafe-inline' https://*.googleapis.com"
+      'default-src': "'none'",
+      //Added 'unsafe-inline' to get rid of console errors. It seems to render okay without so
+      //we may be able to remove it in the future if it's a security problem.
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' *.googleapis.com maps.gstatic.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' maps.gstatic.com",
+      'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+  };
+  ENV.googleMap = {
+      // your configuration goes here
+      apiKey : 'AIzaSyBcIcoeFv6bDyZUz7eI-U42wqptWFrmj2A'
   }
 
   if (environment === 'development') {
